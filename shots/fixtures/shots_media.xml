@@ -1,0 +1,9 @@
+PostgreSQL is available
+usage: manage.py dumpdata [-h] [--version] [-v {0,1,2,3}]
+                          [--settings SETTINGS] [--pythonpath PYTHONPATH]
+                          [--traceback] [--no-color] [--format FORMAT]
+                          [--indent INDENT] [--database DATABASE] [-e EXCLUDE]
+                          [--natural-foreign] [--natural-primary] [-a]
+                          [--pks PRIMARY_KEYS] [-o OUTPUT]
+                          [app_label[.ModelName] [app_label[.ModelName] ...]]
+manage.py dumpdata: error: unrecognized arguments: indent=4

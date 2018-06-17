@@ -267,7 +267,7 @@ tags
 
 ### Project template
 
-chromalog/media/
+#chromalog/media/
 
 .pytest_cache/
 .env

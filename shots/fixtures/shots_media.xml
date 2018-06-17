@@ -1,9 +1,132 @@
 PostgreSQL is available
-usage: manage.py dumpdata [-h] [--version] [-v {0,1,2,3}]
-                          [--settings SETTINGS] [--pythonpath PYTHONPATH]
-                          [--traceback] [--no-color] [--format FORMAT]
-                          [--indent INDENT] [--database DATABASE] [-e EXCLUDE]
-                          [--natural-foreign] [--natural-primary] [-a]
-                          [--pks PRIMARY_KEYS] [-o OUTPUT]
-                          [app_label[.ModelName] [app_label[.ModelName] ...]]
-manage.py dumpdata: error: unrecognized arguments: indent=4
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object model="shots.manufacturer" pk="1">
+        <field name="name" type="CharField">Ilford</field>
+        <field name="country" type="CharField">United Kingdom</field>
+        <field name="notes" type="TextField"></field>
+    </object>
+    <object model="shots.manufacturer" pk="2">
+        <field name="name" type="CharField">Rollei</field>
+        <field name="country" type="CharField">Germany</field>
+        <field name="notes" type="TextField"></field>
+    </object>
+    <object model="shots.manufacturer" pk="3">
+        <field name="name" type="CharField">Kodak</field>
+        <field name="country" type="CharField">USA</field>
+        <field name="notes" type="TextField">Eastman Kodak company</field>
+    </object>
+    <object model="shots.film" pk="1">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">1</field>
+        <field name="stock" type="CharField">Delta Pro 100</field>
+        <field name="iso" type="IntegerField">100</field>
+        <field name="film_format" type="CharField">35mm / MF / LF</field>
+    </object>
+    <object model="shots.film" pk="2">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">1</field>
+        <field name="stock" type="CharField">Delta Pro 400</field>
+        <field name="iso" type="IntegerField">400</field>
+        <field name="film_format" type="CharField">35mm / MF / LF</field>
+    </object>
+    <object model="shots.film" pk="3">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">1</field>
+        <field name="stock" type="CharField">FP4 Plus</field>
+        <field name="iso" type="IntegerField">125</field>
+        <field name="film_format" type="CharField">35mm / MF / LF</field>
+    </object>
+    <object model="shots.film" pk="4">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">1</field>
+        <field name="stock" type="CharField">HP5+</field>
+        <field name="iso" type="IntegerField">400</field>
+        <field name="film_format" type="CharField">35mm / MF / LF</field>
+    </object>
+    <object model="shots.film" pk="5">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">1</field>
+        <field name="stock" type="CharField">Pan F+ 50</field>
+        <field name="iso" type="IntegerField">50</field>
+        <field name="film_format" type="CharField">35mm / MF / LF</field>
+    </object>
+    <object model="shots.film" pk="6">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">1</field>
+        <field name="stock" type="CharField">SFX 200</field>
+        <field name="iso" type="IntegerField">200</field>
+        <field name="film_format" type="CharField">35mm / MF / LF</field>
+    </object>
+    <object model="shots.film" pk="7">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">1</field>
+        <field name="stock" type="CharField">XP2 Super 400</field>
+        <field name="iso" type="IntegerField">400</field>
+        <field name="film_format" type="CharField">35mm / MF / LF</field>
+    </object>
+    <object model="shots.film" pk="8">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">1</field>
+        <field name="stock" type="CharField">Delta 3200</field>
+        <field name="iso" type="IntegerField">3200</field>
+        <field name="film_format" type="CharField">35mm / MF / LF</field>
+    </object>
+    <object model="shots.film" pk="9">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">2</field>
+        <field name="stock" type="CharField">ATP 1.1 Advanced Technical Pan</field>
+        <field name="iso" type="IntegerField">32</field>
+        <field name="film_format" type="CharField">MF</field>
+    </object>
+    <object model="shots.film" pk="10">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">2</field>
+        <field name="stock" type="CharField">Infrared 400</field>
+        <field name="iso" type="IntegerField">400</field>
+        <field name="film_format" type="CharField">35mm / MF / LF</field>
+    </object>
+    <object model="shots.film" pk="11">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">2</field>
+        <field name="stock" type="CharField">Ortho 25</field>
+        <field name="iso" type="IntegerField">25</field>
+        <field name="film_format" type="CharField">35mm / MF / LF</field>
+    </object>
+    <object model="shots.film" pk="12">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">2</field>
+        <field name="stock" type="CharField">Retro 400S</field>
+        <field name="iso" type="IntegerField">400</field>
+        <field name="film_format" type="CharField">35mm / MF /</field>
+    </object>
+    <object model="shots.film" pk="13">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">2</field>
+        <field name="stock" type="CharField">Retro 80S</field>
+        <field name="iso" type="IntegerField">80</field>
+        <field name="film_format" type="CharField">35mm / MF /</field>
+    </object>
+    <object model="shots.film" pk="14">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">2</field>
+        <field name="stock" type="CharField">RPX 100</field>
+        <field name="iso" type="IntegerField">100</field>
+        <field name="film_format" type="CharField">35mm / MF /</field>
+    </object>
+    <object model="shots.film" pk="15">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">2</field>
+        <field name="stock" type="CharField">RPX 25</field>
+        <field name="iso" type="IntegerField">25</field>
+        <field name="film_format" type="CharField">35mm / MF / LF</field>
+    </object>
+    <object model="shots.film" pk="16">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">2</field>
+        <field name="stock" type="CharField">RPX 400</field>
+        <field name="iso" type="IntegerField">400</field>
+        <field name="film_format" type="CharField">35mm / MF / LF</field>
+    </object>
+    <object model="shots.film" pk="17">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">2</field>
+        <field name="stock" type="CharField">Superpan 200</field>
+        <field name="iso" type="IntegerField">200</field>
+        <field name="film_format" type="CharField">35mm / MF /</field>
+    </object>
+    <object model="shots.film" pk="18">
+        <field name="mfg" rel="ManyToOneRel" to="shots.manufacturer">3</field>
+        <field name="stock" type="CharField">TMAX 100</field>
+        <field name="iso" type="IntegerField">100</field>
+        <field name="film_format" type="CharField">35mm/MF/LF</field>
+    </object>
+    <object model="shots.shot" pk="1">
+        <field name="title" type="CharField">The Steamer</field>
+        <field name="film" rel="ManyToOneRel" to="shots.film">14</field>
+        <field name="image" type="FileField">shot_upload/steamer.jpg</field>
+    </object>
+</django-objects>

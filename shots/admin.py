@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Manufacturer, Film
+from .models import Manufacturer, Film, Shot
 
 # Register your models here.
 class FilmAdmin(admin.ModelAdmin):
@@ -7,3 +7,4 @@ class FilmAdmin(admin.ModelAdmin):
 
 admin.site.register(Manufacturer)
 admin.site.register(Film, FilmAdmin)
+admin.site.register(Shot)

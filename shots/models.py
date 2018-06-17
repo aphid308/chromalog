@@ -25,3 +25,15 @@ class Film(models.Model):
 
     def __str__(self):
         return str(self.mfg) + ": " + str(self.stock)
+
+class Shot(models.Model):
+    title = models.CharField("Title", max_length=50)
+    film = models.ForeignKey(Film, on_delete="PRESERVE")
+    image = models.ImageField(upload_to='shot_upload/', max_length=100)
+    class Meta:
+        verbose_name = "Shot"
+        verbose_name_plural = "Shots"
+
+    def __str__(self):
+        return str(self.title)
+
